@@ -1,1 +1,1 @@
-Rails.application.config.i18n.default_locale = :zhCN
+Rails.application.config.i18n.default_locale = :zh_CN

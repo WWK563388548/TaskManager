@@ -1,5 +1,5 @@
 ---
-zh-CN:
+zh_CN:
   activerecord:
     errors:
       messages:
@@ -179,3 +179,12 @@ zh-CN:
       long: "%Y年%m月%d日 %H:%M"
       short: "%m月%d日 %H:%M"
     pm: 下午
+  models:
+    task: 待办事项
+  attributes:
+    task:
+      id: ID
+      name: 待办事项名称
+      description: 待办事项说明
+      created_at: 添加时间
+      updated_at: 更新时间
