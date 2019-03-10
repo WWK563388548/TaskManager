@@ -1,2 +1,13 @@
-h1 Tasks#new
-p Find me in app/views/tasks/new.html.slim
+h1(class="main-title-new") 添加新的待办事项
+
+.nav.justify-content-end
+    = link_to '一览', tasks_path, class: 'nav-link'
+
+= form_with model: @task, local: true do |f|
+    .form-group
+        = f.label :name
+        = f.text_field :name, class: 'form-control', id: 'task_name'
+    .form-group
+        = f.label :description
+        = f.text_area :description, rows: 8, class: 'form-control', id: 'task_description'
+    = f.submit nil, class: 'btn btn-primary'
